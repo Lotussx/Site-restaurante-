@@ -1,0 +1,164 @@
+@media screen and (max-width: 500px) {
+
+    .firstContainer {
+        height: 10vh;
+        width: 100vw;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    header {
+        height: 10%;
+        margin: 0;
+        opacity: 1;
+        position: fixed;
+    }
+
+    .titleHeader {
+        height: 100%;
+        margin-left: 40px;
+    }
+    .infoLoja{
+        margin-top: 15px;
+    }
+
+    .menuHeader {
+        transform: translateX(100%);
+        flex-direction: column;
+        margin-left: 60%;
+        margin-top: 300px;
+        position: fixed;
+        height: 180%;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.9);
+        transition: 0.8s ease-in-out;
+    }
+
+    .menuHeader ul li {
+        margin-left: -20px;
+        display: block;
+        padding: 20px 57px;
+        border-radius: 0;
+        width: 150%;
+    }
+
+    .menuMobile {
+        transform: translateX(-360%);
+        margin-top: -15px;
+        margin-left: -60px;
+        margin-bottom: 20px;
+        transition: 0.8s ease-in-out;
+
+    }
+
+    .menuMobile div {
+        display: block;
+    }
+
+    .selected01 {
+        transform: translateX(0) !important;
+    }
+
+    .banner {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .ofertaPrincipal {
+        width: 90%;
+        overflow-x: scroll;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 0;
+
+    }
+
+    .ofertaPrincipal-child {
+        width: 95%;
+        
+
+    }
+
+    .menuCategorias {
+        width: 95%;
+        overflow-x: scroll;
+        justify-content: flex-start;
+        overflow-y: hidden;
+    }
+
+    .menuCategorias ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menuCategorias ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 55px;
+        font-size: 2vmax;
+    }
+
+    .barra::before {
+        display: none;
+    }
+
+    .titulo-ofertaPrincipal{
+        height: 50px;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    .infoOferta p {
+        width: 80%;
+    }
+
+    .boxCardapio {
+        width: 90%;
+        margin-top: 00px;
+        height: auto;
+    }
+
+
+    .textoCardapio {
+        width: 70%;
+        margin-left: 10px;
+    }
+
+    .textoCardapio h2 {
+        font-size: 2.1vmax;
+    }
+
+    .textoCardapio p {
+        font-size: 1.4vmax;
+        margin-top: -10px;
+    }
+
+    .textoCardapio h3 {
+        font-size: 2vmax;
+        margin-top: 15px;
+    }
+
+    .imgCardapio{
+        height: 65%;
+    }
+
+    .boxCardapio-child {
+        flex-direction: column;
+        height: 340px;
+        margin: 0;
+    }
+
+    .boxCardapio a {
+        height: 100%;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+}

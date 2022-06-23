@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lobster+Two&family=Oswald:wght@200;300;400&family=Voltaire&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.flexClass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer {
+    width: 100%;
+    height: 80vh;
+    margin: 70px auto;
+}
+
+.containerLanche {
+    width: 32%;
+    height: 100%;
+
+}
+
+
+
+.itemPrincipal-child {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px black;
+    transition: 0.5s;
+    margin-right: 20px;
+}
+
+.img-lanche01 {
+    width: 100%;
+    height: 70%;
+    background-image: url('https://soubh.uai.com.br/uploads/post/image/11558/main_destaque_Alexandr_Popel.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.img-lanche img {
+    width: 100%;
+    height: 100%;
+}
+
+.info-lanche h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 22px;
+    margin: 10px 0 5px 20px;
+}
+
+.info-lanche p {
+    font-size: 16px;
+    width: 340px;
+    margin: 10px 15px 5px 20px;
+}
+
+.preco p {
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.containerForms {
+    width: 30%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px black;
+    margin-left: 20px;
+}
+
+#form1 {
+    margin: 40px 20px 0 45px;
+    width: 100%;
+}
+
+#form1 h2 {
+    font-size: 22px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#nome {
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#obsPedido {
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#form2Container {
+    display: none;
+    opacity: 0;
+    margin: 10px 20px 0 45px;
+    width: 100%;
+    animation: entrada01;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes entrada01 {
+    to {
+        opacity: 1;
+    }
+}
+
+#form2 {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%;
+}
+
+#form2 input {
+    margin-right: 5px;
+    width: 70px;
+}
+#form2 label{
+    margin-right: 10px;
+}
+
+#form2 h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
+#labelEntrega {
+    width: 80%;
+    margin-top: 10px;
+}
+
+
+#obsEntrega {
+    width: 160% !important;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-left: 0 !important;
+}
+
+#form3Container {
+    width: 100%;
+    height: 50px;
+    margin: 10px 20px 0 45px;
+
+}
+
+.radio {
+    margin: 0 5px;
+}
+
+#form3 h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
+.precoContainer {
+    width: 100%;
+    height: 50px;
+    justify-content: flex-start;
+    text-align: center;
+    margin: 10px 20px 0 30px;
+
+}
+
+.contador {
+    margin-left: 5px;
+}
+
+.btnQuant {
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+.preco {
+    margin-top: -15px;
+}
+
+#valorProd {
+    height: 30px;
+    width: 200px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+#submit{
+    width: 80%;
+    height: 35px;
+    border-radius: 10px;
+    margin-left: 47px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Bebas Neue', cursive;
+    background-color: rgb(223, 74, 0);
+    color: white;
+    border: 0px;
+
+}

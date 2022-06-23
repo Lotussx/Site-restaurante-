@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main-responsive.css">
+    <link rel="icon" type="imagem/png" href="./assets/img/favicon.ico" />
+
+
+    <link rel="stylesheet" href="./assets/css/owlcarousel/owl.carousel.css">
+    <!-- Os arquivos OWL possuem uma ordem a serem chamados, este é o 1° -->
+    <link rel="stylesheet" href="./assets/css/owlcarousel/owl.theme.default.min.css">
+    <!--  2° arquivo na ordem  -->
+    <script src="./assets/js/owlcarousel/jquery.min.js"></script>
+    <!-- 3° arquivo na ordem -->
+    <script src="./assets/js/owlcarousel/owl.carousel.min.js"></script>
+    <!-- 4° arquivo na ordem -->
+
+    <title>Comedoria</title>
+</head>
+
+<body>
+    <div class="firstContainer flexClass">
+        <!-- O firstContainer (Cabeçalho, título, botões)-->
+        <header>
+            <div class="titleHeader">
+                <h1>Comedoria</h1>
+            </div>
+            <div class="menuHeader flexClass" id="menuHeader">
+                <!--Menu que dá acessoa a páginas subcequentes-->
+                <div class="menuMobile" id="menuMobile">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul>
+                    <li>Inicio</li>
+                    <a href="./cardapio/cardapio.html"><li>Cardápio</li></a>
+                    <li>Sobre nós</li>
+                    <li>Contato</li>
+                </ul>
+            </div>
+        </header>
+        <!--Área do Título-->
+        <div class="main-Title-box flexClass">
+            <div class="firstText flexClass">
+                <h1>LANCHES DELICIOSOS</h1>
+            </div>
+            <div class="secondText flexClass">
+                <h1>TUDO EM UM SÓ </h1>
+                <h1 class="orange"> LUGAR </h1>
+            </div>
+            <div class="thirdText flexClass">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat maiores excepturi ut. Odio
+                nostrum assumenda repellendus beatae recusandae nisi quod sunt ut nihil voluptates.
+            </div>
+        </div>
+        <!--Área dos Botões-->
+        <div class="buttonWrapper flexClass">
+            <div class="textButton flexClass">
+                <h2>Café da Manhã</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="textButton flexClass">
+                <h2>Almoço</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="textButton flexClass">
+                <h2>Jantar</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        <div class="seta flexClass">
+            <a href="#link01">
+                <img src="./assets/img/seta-baixo.png" alt="">
+            </a>
+        </div>
+    </div>
+    <!--2° seção do site-->
+    <div id="link01" class="secondContainer flexClass">
+        <div class="secondContent flexClass">
+            <div class="title flexClass">
+                <h1>Nossas especialidades</h1>
+                <hr>
+            </div>
+            <div class="specialities flexClass">
+                <div class="speciaBox flexClass">
+                    <i class="fa-solid fa-utensils"></i>
+                    <h2>Café da Manhã</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic cum pariatur consectetur amet.</p>
+                </div>
+                <div class="speciaBox flexClass">
+                    <i class="fa-solid fa-mug-saucer"></i>
+                    <h2>Almoço</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque temporibus laudantium est
+                        incidunt.</p>
+                </div>
+                <div class="speciaBox flexClass">
+                    <i class="fa-solid fa-utensils"></i>
+                    <h2>Lanches</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores quae laboriosam magnam saepe.
+                    </p>
+                </div>
+                <div class="speciaBox flexClass">
+                    <i class="fa-solid fa-mug-saucer"></i>
+                    <h2>Jantar</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nemo recusandae et vitae.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--3° seção do site-->
+    <div class="thirdContainer flexClass">
+        <div class="thirdContent flexClass">
+            <div class="title flexClass">
+                <h1>Principais Pratos</h1>
+                <hr>
+            </div>
+            <div class="slide-pai">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="./assets/img/slide01.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="./assets/img/slide02.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="./assets/img/slide03.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="./assets/img/slide04.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--4° seção do site-->
+    <div class="fourthContainer flexClass">
+        <div class="fourthContent flexClass">
+            <div class="title flexClass">
+                <h1>Comidas Deliciosas</h1>
+                <hr>
+            </div>
+            <div class="boxFotos flexClass">
+                <div class="childFotos flexClass">
+                    <img src="./assets/img/comida01.jpg" alt="">
+                </div>
+                <div class="childFotos flexClass">
+                    <img src="./assets/img/comida02.jpg" alt="">
+                </div>
+                <div class="childFotos flexClass">
+                    <img src="./assets/img/comida03.jpg" alt="">
+                </div>
+                <div class="childFotos flexClass">
+                    <img src="./assets/img/comida04.jpg" alt="">
+                </div>
+                <div class="childFotos flexClass">
+                    <img src="./assets/img/comida05.jpg" alt="">
+                </div>
+                <div class="childFotos flexClass">
+                    <img src="./assets/img/comida06.jpg" alt="">
+                </div>
+                <div class="childFotos flexClass">
+                    <img src="./assets/img/comida07.jpg" alt="">
+                </div>
+                <div class="childFotos flexClass">
+                    <img src="./assets/img/comida08.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--Rodapé da página--> 
+<footer>
+   <p>Copyright © 2016 Lotusx. All Right Reserved</p> 
+</footer>
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/4600f6d9ae.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+
+
+</body>
+
+</html>

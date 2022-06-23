@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/cardapio.css">
+    <link rel="stylesheet" href="./assets/css/cardapio-responsive.css">
+    <script src="../assets/js/script.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="firstContainer flexClass">
+        <!-- O firstContainer (Cabeçalho, título, botões)-->
+        <header>
+            <div class="titleHeader flexClass">
+                <h1>Comedoria</h1>
+            </div>
+            <div class="menuHeader flexClass" id="menuHeader">
+                <!--Menu que dá acessoa a páginas subcequentes-->
+                <div class="menuMobile" id="menuMobile">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul>
+                    <a href="../index.html">
+                        <li>Inicio</li>
+                    </a>
+                    <a href="./cardapio.html">
+                        <li>Cardápio</li>
+                    </a>
+                    <li>Sobre nós</li>
+                    <li>Contato</li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <!--Container com imagem que vem logo abaixo do cabeçalho-->
+    <div class="banner">
+
+    </div>
+
+    <!--Informaçoes da loja-->
+    <div class="infoLoja flexClass">
+        <h3>Comdedoria X</h3>
+        <p>Fechado</p>
+    </div>
+
+    <!--Menu com as categorias dos produtos, cada cateria
+    possui um href que levará para a área correspendente-->
+    <div class="menuCategorias flexClass">
+        <ul class="flexClass" id="listaMenu">
+            <li>
+                <p id="m01">Café da Manhã</p>
+            </li>
+            <li>
+                <p id="m02">Almoço</p>
+            </li>
+            <li>
+                <p id="m03">Lanches</p>
+            </li>
+            <li>
+                <p id="m04">Jantar</p>
+            </li>
+            <li>
+                <p id="m05">Bebidas</p>
+            </li>
+        </ul>
+    </div>
+
+    <!--Titulo simples para as principais ofertas-->
+    <div class="titulo-ofertaPrincipal flexClass">
+        <h2>Principais Ofertas</h2>
+    </div>
+
+    <!--Área destina às ofertas principais-->
+    <div class="ofertaPrincipal flexClass">
+
+        <!--Cada "ofertaPrincipal-child" corresponde a uma oferta-->
+        <div class="ofertaPrincipal-child">
+            <!--As divs "img-lanche" comprotam a imagem do lanche que
+            está definida como background-->
+            <div class="img-lanche01">
+            </div>
+
+            <!--As divs "infoOferta" comportam as informações
+            referentes a titulo e descriçao da oferta-->
+            <div class="infoOferta">
+                <h2>Lanche 01</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus praesentium ad unde?
+                </p>
+            </div>
+
+            <!--As divs "preco" comportam as infomações referentes
+            ao preço da oferta-->
+            <div class="preco">
+                <p>A partir de R$ 22,90</p>
+            </div>
+        </div>
+
+        <div class="ofertaPrincipal-child">
+            <div class="img-lanche02">
+            </div>
+            <div class="infoOferta">
+                <h2>Lanche 02</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus praesentium ad unde?</p>
+            </div>
+            <div class="preco">
+                <p>A partir de R$ 22,90</p>
+            </div>
+        </div>
+
+        <div class="ofertaPrincipal-child" id="testee1">
+            <div class="img-lanche03">
+            </div>
+            <div class="infoOferta">
+                <h2>Lanche 03</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus praesentium ad unde?</p>
+            </div>
+            <div class="preco">
+                <p>A partir de R$ 22,90</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Área que comporta o cardápio-->
+    <div class="boxCardapio flexClass">
+        <h2>Cardapio</h2>
+
+        <!--Cada "boxCardapio-child" comporta dois "a"-->
+        <div class="boxCardapio-child flexClass">
+
+            <!--Cada a comporta um item do cardápio-->
+            <a href="../pedidos/pedido01/pedido01.html">
+                <div class="infoCardapio flexClass">
+                    <div class="textoCardapio">
+                        <h2>Cheese burguer Tradicional + Fritas</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta placeat saepe aliquid facere
+                            architecto perferendis.</p>
+                        <h3>A partir de R$ 29,90</h3>
+                    </div>
+                    <div class="imgCardapio">
+                        <img src="https://static-images.ifood.com.br/image/upload/t_high/pratos/e1bc8919-bba8-4bac-a6d2-f7e3d8bfd40d/202205141906_A36Y_i.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="infoCardapio flexClass">
+                    <div class="textoCardapio">
+                        <h2>Cheese burguer Tradicional + Fritas</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta placeat saepe aliquid facere
+                            architecto perferendis.</p>
+                        <h3>A partir de R$ 29,90</h3>
+                    </div>
+                    <div class="imgCardapio">
+                        <img src="https://static-images.ifood.com.br/image/upload/t_high/pratos/e1bc8919-bba8-4bac-a6d2-f7e3d8bfd40d/202205141339_52W2_i.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="boxCardapio-child flexClass">
+            <a href="../pedidos/pedido01.html">
+                <div class="infoCardapio flexClass">
+                    <div class="textoCardapio">
+                        <h2>Cheese burguer Tradicional + Fritas</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta placeat saepe aliquid facere
+                            architecto perferendis.</p>
+                        <h3>A partir de R$ 29,90</h3>
+                    </div>
+                    <div class="imgCardapio">
+                        <img src="https://static-images.ifood.com.br/image/upload/t_high/pratos/e1bc8919-bba8-4bac-a6d2-f7e3d8bfd40d/202205141339_52W2_i.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="infoCardapio flexClass">
+                    <div class="textoCardapio">
+                        <h2>Cheese burguer Tradicional + Fritas</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta placeat saepe aliquid facere
+                            architecto perferendis.</p>
+                        <h3>A partir de R$ 29,90</h3>
+                    </div>
+                    <div class="imgCardapio">
+                        <img src="https://static-images.ifood.com.br/image/upload/t_high/pratos/e1bc8919-bba8-4bac-a6d2-f7e3d8bfd40d/202205142152_4670_i.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="boxCardapio-child flexClass">
+            <a href="">
+                <div class="infoCardapio flexClass">
+                    <div class="textoCardapio">
+                        <h2>Cheese burguer Tradicional + Fritas</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta placeat saepe aliquid facere
+                            architecto perferendis.</p>
+                        <h3>A partir de R$ 29,90</h3>
+                    </div>
+                    <div class="imgCardapio">
+                        <img src="https://static-images.ifood.com.br/image/upload/t_high/pratos/e1bc8919-bba8-4bac-a6d2-f7e3d8bfd40d/202204151602_D154_i.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="infoCardapio flexClass">
+                    <div class="textoCardapio">
+                        <h2>Cheese burguer Tradicional + Fritas</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta placeat saepe aliquid facere
+                            architecto perferendis.</p>
+                        <h3>A partir de R$ 29,90</h3>
+                    </div>
+                    <div class="imgCardapio">
+                        <img src="https://static-images.ifood.com.br/image/upload/t_high/pratos/e1bc8919-bba8-4bac-a6d2-f7e3d8bfd40d/202204150957_F770_i.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!--Rodapé da página-->
+    <footer>
+        <p>Copyright © 2016 Lotusx. All Right Reserved</p>
+    </footer>
+
+
+    <script src="./assets/js/cardapio.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+@media screen and (max-width: 500px) {
+    .firstContainer {
+        height: 100vh;
+    }
+
+    header {
+        height: 10vh;
+        z-index: 600;
+        margin: 0;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.5);
+
+    }
+
+    .titleHeader {
+        margin-left: 25px;
+    }
+
+    .titleHeader h1 {
+        font-size: 3.5vmax;
+    }
+
+    .menuHeader {
+        transform: translateX(100%);
+        flex-direction: column;
+        margin-left: 60%;
+        margin-top: 300px;
+        position: fixed;
+        height: 180%;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.9);
+        transition: 0.8s ease-in-out;
+    }
+
+    .menuHeader ul li {
+        margin-left: -20px;
+        display: block;
+        padding: 20px 57px;
+        border-radius: 0;
+        width: 150%;
+    }
+
+
+    .menuMobile {
+        transform: translateX(-360%);
+        margin-top: -15px;
+        margin-left: -60px;
+        margin-bottom: 20px;
+        transition: 0.8s ease-in-out;
+
+    }
+
+    .menuMobile div {
+        display: block;
+    }
+
+    .selected01 {
+        transform: translateX(0) !important;
+    }
+
+    .main-Title-box {
+        height: 50%;
+
+    }
+
+    .firstText {
+        font-size: 18px;
+    }
+
+    .secondText {
+        font-size: 23px;
+        margin-top: -20px;
+    }
+
+    .thirdText {
+        width: 85%;
+    }
+
+    .buttonWrapper {
+        width: 85%;
+        height: 42vh;
+        flex-direction: column;
+        margin-top: -70px;
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+
+    }
+
+    .textButton {
+        width: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, .6));
+        height: 25%;
+        border-radius: 20px;
+        margin: 10px auto;
+    }
+
+    .secondContent {
+        width: 100%;
+    }
+
+    .secondContent h1 {
+        font-size: 35px;
+    }
+
+    .title::before {
+        margin-top: 100px;
+    }
+
+    .specialities {
+        width: 100%;
+        height: 1200px;
+        flex-wrap: wrap;
+    }
+
+    .speciaBox {
+        width: 60%;
+        height: 300px;
+    }
+
+    .thirdContainer {
+        margin-top: 900px;
+    }
+    .thirdContent h1{
+        font-size: 35px;
+    }
+
+    .fourthContent h1 {
+        font-size: 35px;
+    }
+
+    .fourthContainer {
+        height: 800px;
+    }
+
+    .fourthContent {
+        width: 100%;
+    }
+    .childFotos{
+        width: 150px;
+        height: 150px;
+    }
+}
