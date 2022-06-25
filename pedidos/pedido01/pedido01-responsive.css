@@ -1,0 +1,178 @@
+@media screen and (max-width: 500px) and (max-height: 1000px) {
+
+    .botaoVoltar-container {
+        width: 100%;
+        height: 70px;
+        margin-top: -10px;
+        margin-left: 0;
+        border-radius: 0 0 20px 20px;
+        justify-content: flex-start;
+    }
+
+    .botaoVoltar {
+        width: 25px;
+        height: 25px;
+        margin-left: 20px;
+        margin-top: 0;
+    }
+
+    .legendaVoltar h2{
+        position: absolute;
+        margin-top: -7%;
+        margin-left: 22%;
+    }
+
+    .mainContainer {
+        flex-direction: column;
+        justify-content: center;
+        height: 110vh;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .containerProduto {
+        width: 100%;
+        height: 50%;
+    }
+
+    .containerProduto-child {
+        margin: 0;
+        border-radius: 0;
+        box-shadow: 0px 1px 5px black;
+        border-radius: 0px 0px 30px 30px;
+    }
+
+    .imageProduto {
+        border-radius: 0px;
+        height: 60%;
+        margin-bottom: 0;
+
+    }
+
+    .infoProduto {
+        height: 23%;
+        padding-top: 15px;
+        padding-left: 20px;
+    }
+
+    .infoProduto h2 {
+        font-size: 3vmax;
+        margin: 0px 0px 5px 0px;
+    }
+
+    .infoProduto p {
+        margin: 0px 0px 0px 0px;
+        font-size: 1.9vmax;
+        width: 95%;
+        margin-top: 0px;
+    }
+
+    .precoProduto {
+        height: 12%;
+        margin-top: 20px;
+    }
+
+    .precoProduto p {
+        margin-top: 10px;
+        font-weight: 700;
+    }
+
+    .containerFormulario {
+        width: 100%;
+        height: 800px;
+        margin-left: 0;
+        margin-top: -5px;
+        border-radius: 0;
+        box-shadow: 0px 0px 0px black;
+
+    }
+
+    #formulario-01 {
+        margin: 0;
+        margin-top: 35px;
+        width: 100%;
+        height: 250px;
+
+    }
+
+    #formulario-01 input {
+        width: 88%;
+        margin-left: 20px;
+    }
+
+    #formulario-01 h2 {
+        margin-left: 20px;
+    }
+
+    #nome,
+    #obsPedido {
+        height: 35px !important;
+    }
+
+    #radio01,
+    #radio02 {
+        width: 10px !important;
+    }
+
+    #container-formulario-02 {
+        margin: 0 auto !important;
+        margin-top: -30px !important;
+        width: 90%;
+        flex-wrap: nowrap;
+    }
+
+    #container-formulario-02 input {
+        margin-left: 5px;
+        margin-right: 10px;
+        width: 80px;
+    }
+
+    #container-formulario-02 h3 {
+        margin-right: 10px;
+    }
+
+    #formulario-02 {
+        width: 85%;
+        margin-left: 5px;
+    }
+
+    #formulario-02 label {
+        margin-right: 0;
+    }
+
+
+
+    #labelEntrega {
+        margin-top: 10px;
+    }
+
+    #container-formulario-03 {
+        margin: 0;
+    }
+
+    #formulario-03 {
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+
+    .containerPreco {
+        margin: 0;
+        margin-top: 25px;
+    }
+
+    .contador {
+        margin-left: 15px;
+    }
+
+    .preco {
+        margin-top: 0;
+        margin-left: 25px;
+    }
+
+    #submit {
+        margin: 0 auto;
+        margin-top: 20px;
+        height: 40px;
+        width: 90%;
+    }
+}

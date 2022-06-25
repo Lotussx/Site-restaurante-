@@ -3,7 +3,7 @@ var check02 = document.getElementById("radio02");
 var check03 = document.getElementById("radio03");
 var check04 = document.getElementById("radio04");
 var check05 = document.getElementById("radio05");
-const form2 = document.getElementById("form2Container");
+const form2 = document.getElementById("container-formulario-02");
 
 var delivery = "a";
 var opcPagamento = "a";

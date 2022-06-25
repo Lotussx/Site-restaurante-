@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./pedido01.css">
+    <link rel="stylesheet" href="./pedido01-responsive.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -15,88 +16,122 @@
 
 <body>
 
+    <div class="botaoVoltar-container flexClass">
+        <a href="../../cardapio/cardapio.html">
+            <div class="botaoVoltar">
+
+            </div>
+            <div class="legendaVoltar">
+                <h2>Voltar para o cardápio</h2>
+            </div>
+        </a>
+    </div>
+    <!--O "mainContainer" comporta os containers que possuem as
+    informações do lanche e o formulário-->
     <div class="mainContainer flexClass">
-        <div class="containerLanche flexClass">
-            <div class="itemPrincipal-child">
-                <div class="img-lanche01">
+
+        <!--A classe "containerProduto" é responsável por abrigar as
+        informações referentes ao produto-->
+        <div class="containerProduto flexClass">
+
+            <div class="containerProduto-child">
+
+                <!--"imageProduto" é a div que possui a imagem do
+                produto em questão que está definido como background-->
+                <div class="imageProduto">
                 </div>
-                <div class="info-lanche">
+
+                <!--A div "infoProduto" comporta as informações 
+                referentes ao produto-->
+                <div class="infoProduto">
                     <h2>Lanche 01</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus praesentium ad unde?
-                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus praesentium ad unde?</p>
                 </div>
-                <div class="preco">
+
+                <!--"precoProduto" comporta o preço do produto em questão-->
+                <div class="precoProduto">
                     <p>A partir de R$ 22,90</p>
                 </div>
             </div>
         </div>
-        <div class="containerForms flexClass">
-            <form id="form1">
-                <h2>Digite seu nome:</h2>
-                <input type="text" id="nome" placeholder="Nome..."> <br>
 
+        <!--A div "containerFormulario" engloba todos os formularios
+        presentes na página-->
+        <div class="containerFormulario flexClass">
+
+            <form id="formulario-01">
+                <!--Input de Nome-->
+                <h2>Digite seu nome:</h2>
+                <input type="text" id="nome" placeholder="Nome...">
+
+                <!--Input de OBS. do Pedido-->
                 <h2>Observações do pedido:</h2>
                 <input type="text" id="obsPedido" placeholder="Observações..."> <br>
 
+                <!--Input para opções de "Sim" e "Não" de Delivery-->
                 <h2>Delivery?</h2>
                 <input type="radio" name="opcao" value="Sim" id="radio01" class="radio"> Sim, quero.
                 <input type="radio" name="opcao" value="Não" id="radio02" class="radio"> Não, irei no estabelecimento.
-
-
-                <!--Formulário-->
             </form>
-            <div id="form2Container">
 
-                <form id="form2" class="flexClass">
 
-                    <label for="nome">
+            <div id="container-formulario-02">
+                <form id="formulario-02" class="flexClass">
+
+                    <!--Input para inserir o Cep-->
+                    <label for="cep">
                         <h3>CEP:</h3>
-                    </label><input id="cep" type="text" required name="nome" /> 
+                    </label><input id="cep" type="text" required name="cep" />
 
+                    <!--Input para inserir o nome da Rua-->
                     <label for="rua">
                         <h3>Rua:</h3>
                     </label>
                     <input id="rua" type="text" required name="rua" />
 
+                    <!--Input para inserir o Número-->
                     <label for="numero">
                         <h3>Número:</h3>
                     </label>
                     <input id="numero" type="text" name="numero" />
 
+                    <!--Input para inserir o nome da Cidade-->
                     <label for="cidade">
                         <h3>Cidade:</h3>
                     </label>
-                    <input name="cidade" type="text" id="cidade" size="40" />   
+                    <input name="cidade" type="text" id="cidade" size="40" />
 
+                    <!--Input para inserir o nome do bairro-->
                     <label for="bairro">
                         <h3>Bairro:</h3>
                     </label>
                     <input id="bairro" type="text" required name="bairro" />
 
+                    <!--Input para inserir as OBS. de Entrega-->
                     <h3 id="labelEntrega">Observações da Entrega:</h3>
                     <input type="text" id="obsEntrega" placeholder="Observações da Entrega...">
                 </form>
             </div>
 
-            <div id="form3Container">
-                <form id="form3">
+            <!--A div "container-formulario-03" abriga a div 
+            "formulario-03", que por sua vez possui as opções de pagamento-->
+            <div id="container-formulario-03">
+                <form id="formulario-03">
                     <h3>Forma de pagamento:</h3>
-
                     <input type="radio" name="opcao02" value="Dinheiro" id="radio03" class="radio"> Dinheiro
                     <input type="radio" name="opcao02" value="Pix" id="radio04" class="radio"> Pix
                     <input type="radio" name="opcao02" value="Cartão" id="radio05" class="radio"> Cartão
                 </form>
             </div>
 
-            <div class="precoContainer flexClass">
-
+            <!--A div "containerPreco" abriga tanto o contador quanto
+            o valor total do produto-->
+            <div class="containerPreco flexClass">
                 <div class="contador">
                     <button id="btn01" class="btnQuant" name="subtrair">-</button>
                     <span id="numAtual">1</span>
                     <button id="btn02" class="btnQuant" name="adcionar">+</button>
-
                 </div>
-
                 <div class="preco">
                     <p id="valorProd">Total: R$ <span id="precoAtual">22.90</span></p>
                 </div>
@@ -106,7 +141,13 @@
 
         </div>
     </div>
+
+    <!--O script "consultaCEP.js" acessa o site ViaCep e utiliza o CEP que 
+    foi inserido no formulário acima para realizar uma busca das informações subcequentes-->
     <script src="./consultaCEP.js"></script>
+
+    <!--O script "pedido01.js" é responsável por pegar todas as informações
+    inseridas no formulário acima e coloca-las numa link para o Whatsaap-->
     <script src="./pedido01.js"></script>
 </body>
 

@@ -17,21 +17,66 @@ body {
     align-items: center;
 }
 
+.botaoVoltar-container {
+    position: absolute;
+    height: 111%;
+    width: 100px;
+    background-color: rgb(223, 74, 0);
+    margin-left: 120px;
+    transition: .5s;
+    margin-top: -150px;
+    overflow-y: hidden;
+}
+
+.botaoVoltar-container:hover {
+    transform: scale(1, 1);
+    background-color: black;
+}
+
+.botaoVoltar-container a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+
+}
+
+.botaoVoltar-container:hover .botaoVoltar {
+    border-color: white;
+}
+
+.botaoVoltar {
+    margin-left: 30%;
+    margin-top: -50px;
+    width: 40px;
+    height: 40px;
+    border-left: 5px solid white;
+    border-bottom: 5px solid white;
+    box-shadow: 0px 2px 0px black;
+    transform: rotate(45deg);
+}
+
+.legendaVoltar h2{
+    text-shadow: 1px 1px 5px black;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 200;
+    margin-top: 30px;
+}
+
 .mainContainer {
     width: 100%;
     height: 80vh;
     margin: 70px auto;
 }
 
-.containerLanche {
+.containerProduto {
     width: 32%;
     height: 100%;
 
 }
 
-
-
-.itemPrincipal-child {
+.containerProduto-child {
     height: 100%;
     width: 100%;
     border-radius: 20px;
@@ -40,7 +85,7 @@ body {
     margin-right: 20px;
 }
 
-.img-lanche01 {
+.imageProduto {
     width: 100%;
     height: 70%;
     background-image: url('https://soubh.uai.com.br/uploads/post/image/11558/main_destaque_Alexandr_Popel.jpg');
@@ -49,31 +94,31 @@ body {
     border-radius: 20px 20px 0 0;
 }
 
-.img-lanche img {
+.imageProduto img {
     width: 100%;
     height: 100%;
 }
 
-.info-lanche h2 {
+.infoProduto h2 {
     font-family: 'Bebas Neue', cursive;
     font-size: 22px;
     margin: 10px 0 5px 20px;
 }
 
-.info-lanche p {
+.infoProduto p {
     font-size: 16px;
     width: 340px;
     margin: 10px 15px 5px 20px;
 }
 
-.preco p {
+.precoProduto p {
     margin-top: 15px;
     margin-left: 20px;
     font-size: 17px;
     font-weight: 600;
 }
 
-.containerForms {
+.containerFormulario {
     width: 30%;
     height: 100%;
     justify-content: flex-start;
@@ -84,23 +129,17 @@ body {
     margin-left: 20px;
 }
 
-#form1 {
+#formulario-01 {
     margin: 40px 20px 0 45px;
     width: 100%;
 }
 
-#form1 h2 {
+#formulario-01 h2 {
     font-size: 22px;
     font-family: 'Bebas Neue', cursive;
 }
 
-#nome {
-    width: 80%;
-    height: 30px;
-    border-radius: 5px;
-    margin-bottom: 15px;
-}
-
+#nome,
 #obsPedido {
     width: 80%;
     height: 30px;
@@ -108,7 +147,8 @@ body {
     margin-bottom: 15px;
 }
 
-#form2Container {
+
+#container-formulario-02 {
     display: none;
     opacity: 0;
     margin: 10px 20px 0 45px;
@@ -125,22 +165,23 @@ body {
     }
 }
 
-#form2 {
+#formulario-02 {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
     width: 80%;
 }
 
-#form2 input {
+#formulario-02 input {
     margin-right: 5px;
     width: 70px;
 }
-#form2 label{
+
+#formulario-02 label {
     margin-right: 10px;
 }
 
-#form2 h3 {
+#formulario-02 h3 {
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
 }
@@ -159,7 +200,7 @@ body {
     margin-left: 0 !important;
 }
 
-#form3Container {
+#container-formulario-03 {
     width: 100%;
     height: 50px;
     margin: 10px 20px 0 45px;
@@ -170,12 +211,12 @@ body {
     margin: 0 5px;
 }
 
-#form3 h3 {
+#formulario-03 h3 {
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
 }
 
-.precoContainer {
+.containerPreco {
     width: 100%;
     height: 50px;
     justify-content: flex-start;
@@ -208,7 +249,7 @@ body {
     font-size: 25px;
 }
 
-#submit{
+#submit {
     width: 80%;
     height: 35px;
     border-radius: 10px;
