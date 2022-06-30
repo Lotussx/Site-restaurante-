@@ -29,7 +29,6 @@ body {
 }
 
 .botaoVoltar-container:hover {
-    transform: scale(1, 1);
     background-color: black;
 }
 
@@ -111,7 +110,7 @@ body {
     margin: 10px 15px 5px 20px;
 }
 
-.precoProduto p {
+.infoProduto h3 {
     margin-top: 15px;
     margin-left: 20px;
     font-size: 17px;
@@ -218,7 +217,7 @@ body {
 
 .containerPreco {
     width: 100%;
-    height: 50px;
+    height: 60px;
     justify-content: flex-start;
     text-align: center;
     margin: 10px 20px 0 30px;

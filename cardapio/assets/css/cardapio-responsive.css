@@ -5,22 +5,25 @@
         width: 100vw;
     }
 
-    body{
+    body {
         overflow-x: hidden;
     }
 
     header {
-        height: 10%;
+        height: 10vh;
         margin: 0;
         opacity: 1;
         position: fixed;
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, .7));
+
     }
 
     .titleHeader {
         height: 100%;
         margin-left: 40px;
     }
-    .infoLoja{
+
+    .infoLoja {
         margin-top: 15px;
     }
 
@@ -79,8 +82,12 @@
 
     .ofertaPrincipal-child {
         width: 95%;
-        
 
+    }
+
+    .ofertaPrincipal-child:hover {
+        height: 90%;
+        width: 95%;
     }
 
     .menuCategorias {
@@ -109,7 +116,7 @@
         display: none;
     }
 
-    .titulo-ofertaPrincipal{
+    .titulo-ofertaPrincipal {
         height: 50px;
         font-family: 'Bebas Neue', cursive;
     }
@@ -120,32 +127,52 @@
 
     .boxCardapio {
         width: 90%;
-        margin-top: 00px;
+        margin-top: 0px;
         height: auto;
     }
 
 
     .textoCardapio {
         width: 70%;
-        margin-left: 10px;
+        height: 100%;
+        margin-left: 0;
     }
 
     .textoCardapio h2 {
         font-size: 2.1vmax;
+        height: 25%;
+        margin-top: 0;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: left;
+        align-items: center;
     }
 
     .textoCardapio p {
         font-size: 1.4vmax;
-        margin-top: -10px;
+        height: 50%;
+        margin-top: 0;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: left;
+        align-items: center;
     }
 
     .textoCardapio h3 {
-        font-size: 2vmax;
-        margin-top: 15px;
+        font-size: 1.9vmax;
+        height: 25%;
+        margin-top: 0;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: left;
+        align-items: flex-end;
     }
 
-    .imgCardapio{
+    .imgCardapio {
         height: 65%;
+        width: 27%;
+        margin-left: 10px;
+        margin-right: 0px;
     }
 
     .boxCardapio-child {

@@ -213,8 +213,11 @@ header {
 }
 
 .seta {
-    width: 35%;
-    margin: 50px auto 10px auto;
+    position: absolute;
+    height: 45px;
+    width: 100%;
+    margin-top: -5%;
+    z-index: 600;
 }
 
 .seta img {

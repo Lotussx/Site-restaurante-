@@ -4,6 +4,8 @@ var check03 = document.getElementById("radio03");
 var check04 = document.getElementById("radio04");
 var check05 = document.getElementById("radio05");
 const form2 = document.getElementById("container-formulario-02");
+var formHeight = document.querySelector('.containerFormulario')
+console.log(formHeight)
 
 var delivery = "a";
 var opcPagamento = "a";
@@ -15,6 +17,8 @@ $(document).ready(function () {
 
         if (check01.checked == true) {
             form2.style.display = "block";
+            formHeight.classList.remove('formHeight01');
+            formHeight.classList.add('formHeight02');
             delivery = "Sim";
         }
     })
@@ -22,6 +26,8 @@ $(document).ready(function () {
     $("#radio02").click(function () {
         if (check02.checked == true) {
             form2.style.display = "none"
+            formHeight.classList.remove('formHeight02');
+            formHeight.classList.add('formHeight01');
             delivery = 'Não'
         }
     })
@@ -105,7 +111,7 @@ document.querySelector('#submit').addEventListener('click', function () {
 
     if (delivery == "Sim") {
         console.log("sla")
-        let url = ("https://api.whatsapp.com/send?phone=5581931437844&text= *PEDIDO: Lanche 01* %0A%0A==================================%0A*NOME:* " + nome + "%0A*OBS. DO PEDIDO:* " + obsPedido + "%0A*QUANTIDADE:* " + qnt1  + "%0A*FORMA DE PAGAMENTO:* " + opcPagamento + "%0A================================== %0A%0A*DELIVERY?* " + delivery + "%0A*CEP:* " + cep + "%0A*RUA:* " + rua + "%0A*NÚMERO:* " + numero + "%0A*CIDADE:* " + cidade + "%0A*BAIRRO:* " + bairro + "%0A*OBS. ENTREGA:* " + obsEntrega + "%0A%0A*TOTAL: R$* " + preco1);
+        let url = ("https://api.whatsapp.com/send?phone=5581991437844&text= *PEDIDO: Lanche 01* %0A%0A==================================%0A*NOME:* " + nome + "%0A*OBS. DO PEDIDO:* " + obsPedido + "%0A*QUANTIDADE:* " + qnt1  + "%0A*FORMA DE PAGAMENTO:* " + opcPagamento + "%0A================================== %0A%0A*DELIVERY?* " + delivery + "%0A*CEP:* " + cep + "%0A*RUA:* " + rua + "%0A*NÚMERO:* " + numero + "%0A*CIDADE:* " + cidade + "%0A*BAIRRO:* " + bairro + "%0A*OBS. ENTREGA:* " + obsEntrega + "%0A%0A*TOTAL: R$* " + preco1);
         var urlGblobal = url;
         window.open(urlGblobal);
     } else {

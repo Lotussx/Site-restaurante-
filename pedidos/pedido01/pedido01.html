@@ -43,21 +43,21 @@
 
                 <!--A div "infoProduto" comporta as informações 
                 referentes ao produto-->
-                <div class="infoProduto">
+                <div class="infoProduto flexClass">
                     <h2>Lanche 01</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus praesentium ad unde?</p>
+                    <h3>A partir de R$ 22,90</h3>
                 </div>
 
                 <!--"precoProduto" comporta o preço do produto em questão-->
                 <div class="precoProduto">
-                    <p>A partir de R$ 22,90</p>
                 </div>
             </div>
         </div>
 
         <!--A div "containerFormulario" engloba todos os formularios
         presentes na página-->
-        <div class="containerFormulario flexClass">
+        <div class="containerFormulario flexClass formHeight01">
 
             <form id="formulario-01">
                 <!--Input de Nome-->
@@ -70,8 +70,8 @@
 
                 <!--Input para opções de "Sim" e "Não" de Delivery-->
                 <h2>Delivery?</h2>
-                <input type="radio" name="opcao" value="Sim" id="radio01" class="radio"> Sim, quero.
-                <input type="radio" name="opcao" value="Não" id="radio02" class="radio"> Não, irei no estabelecimento.
+                <input type="radio" name="opcao" value="Sim" id="radio01" class="radio"> <label for="opcao" class="radioDelivery"> Sim, quero. </label>
+                <input type="radio" name="opcao" value="Não" id="radio02" class="radio"> <label for="opcao" class="radioDelivery"> Não, irei no estabelecimento.</label> 
             </form>
 
 
@@ -118,29 +118,28 @@
             <div id="container-formulario-03">
                 <form id="formulario-03">
                     <h3>Forma de pagamento:</h3>
-                    <input type="radio" name="opcao02" value="Dinheiro" id="radio03" class="radio"> Dinheiro
-                    <input type="radio" name="opcao02" value="Pix" id="radio04" class="radio"> Pix
-                    <input type="radio" name="opcao02" value="Cartão" id="radio05" class="radio"> Cartão
+                    <input type="radio" name="opcao02" value="Dinheiro" id="radio03" class="radio"> <label for="opcao02"> Dinheiro</label>
+                    <input type="radio" name="opcao02" value="Pix" id="radio04" class="radio"> <label for="opcao02"> Pix</label>
+                    <input type="radio" name="opcao02" value="Cartão" id="radio05" class="radio"> <label for="opcao02"> Cartão</label>
                 </form>
             </div>
 
             <!--A div "containerPreco" abriga tanto o contador quanto
             o valor total do produto-->
             <div class="containerPreco flexClass">
-                <div class="contador">
+                <div class="contador flexClass">
                     <button id="btn01" class="btnQuant" name="subtrair">-</button>
                     <span id="numAtual">1</span>
                     <button id="btn02" class="btnQuant" name="adcionar">+</button>
                 </div>
-                <div class="preco">
+                <div class="preco flexClass">
                     <p id="valorProd">Total: R$ <span id="precoAtual">22.90</span></p>
                 </div>
             </div>
-
             <button id="submit" type="submit" class="btn btn-primary">Fazer Pedido</button>
-
         </div>
     </div>
+
 
     <!--O script "consultaCEP.js" acessa o site ViaCep e utiliza o CEP que 
     foi inserido no formulário acima para realizar uma busca das informações subcequentes-->
